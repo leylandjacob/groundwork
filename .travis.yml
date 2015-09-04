@@ -12,4 +12,4 @@ deploy:
 notifications:
   slack:
     rooms:
-      - bamboocreative:tgJqvd1YbLLVtBa48TzWQWmP#feedback
+      - bamboocreative:tgJqvd1YbLLVtBa48TzWQWmP#groundwork
