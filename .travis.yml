@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "0.12"
+services:
+  - mongodb
+install: npm install
+script: npm test
+deploy:
+  provider: heroku
+  api_key: ""
+  app:
+notifications:
+  slack:
+    rooms:
+      - bamboocreative:tgJqvd1YbLLVtBa48TzWQWmP#feedback

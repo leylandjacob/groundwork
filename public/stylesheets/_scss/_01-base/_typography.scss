@@ -1,0 +1,197 @@
+body {
+  font-family: $base-sans-font;
+  line-height: 1.6;
+  font-size: $base-font-size;
+
+  @include media(max-width $screen-sm-max) {
+    font-size: $base-font-size * 0.8;
+  }
+  
+  @include media(max-width $screen-xs-max) {
+    font-size: $base-font-size * 0.6;
+  }
+
+  color: map-get($gray, dark);
+}
+
+%headings {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  
+	a {
+		text-decoration: none;
+		color: $link-color;		
+	}
+
+  &.section-title {
+    line-height: 2.5;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %headings;
+}
+
+
+h1, h2 {
+  line-height: 1.2;
+}
+
+h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+
+@include media(max-width $screen-md-max) {
+  h1 {
+    font-size: 3.3rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+
+@include media(max-width $screen-sm-max) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+
+@include media(max-width $screen-xs) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+button,
+input,
+select,
+textarea,
+p,
+article,
+aside,
+header,
+ul, 
+li{
+	font-size: ($base-font-size);
+	@include media($screen-sm-max) {
+		font-size: $base-font-size;
+	}
+	
+	font-weight: 300;
+}
+
+html,
+button,
+input,
+select,
+textarea{
+	font-family: $base-sans-font;
+	color: $font-color;
+}
+
+input:focus, textarea:focus, select:focus{
+	outline: 0;
+}
+
+.show-screenreader{
+	position: absolute;
+	left: -9999px;
+}
+
+a {
+	color: $link-color;		
+}
+
+
+i, em {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: square;
+
+  li {
+    margin-left: 1.5em;
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+.center {
+  text-align: center;
+}
+
